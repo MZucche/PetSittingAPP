@@ -1,0 +1,45 @@
+.sp-card{
+  display: flex;
+  align-items: center;
+  font-size: .8rem;
+  justify-content: space-between;
+  background-color: #7EBEA3;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sp-card-header{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sp-card-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-card-data{
+  opacity: .9;
+}
+
+.sp-card-avatar{
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+}
+
+.sp-card-rightdata{
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-card-rightdata-text{
+  text-align: center;
+}

@@ -20,7 +20,6 @@ router.post("/", async (req,res) => {
         const correctPassword = await user.comparePassword(password, user.password);
 
         if (correctPassword){
-            //crear usuario en la base de datos
             const accessToken= user.createAccessToken();
             const refreshToken = await user.createRefreshToken();
             res

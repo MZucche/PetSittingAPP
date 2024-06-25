@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #53A08E;
+    padding: 10px;
+    color: white;
+}
+
+.imgUnk{
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
+
+.span-layout{
+    display: flex;
+}
+
+.p-lay{
+    padding: 0%;
+}

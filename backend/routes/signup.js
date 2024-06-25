@@ -15,11 +15,17 @@ router.post("/", async (req,res) => {
     //crear usuario en la base de datos
     try {
         const user = new User();
-        const exists = await user.usernameExists(username);
+        const existsUser = await user.usernameExists(username);
+        const existsEmail = await user.emailExists(email);
 
-        if (exists){
+        if (existsUser){
             return res.status(409).json(jsonResponse(409, {
                 error: "Ya existe un usuario con ese nombre de usuario",
+        }))
+        }
+        if (existsEmail){
+            return res.status(409).json(jsonResponse(409, {
+                error: "Ya existe un usuario con ese email",
         }))
         } 
         else{

@@ -1,4 +1,4 @@
-const Mongoose = require ("mongoose");
+const Mongoose = require ('mongoose');
 const bcrypt = require ('bcrypt')
 const {generateRefreshToken, generateAccessToken}= require ("../auth/generateTokens")
 const getUserInfo = require ("../lib/getUserInfo")
@@ -13,6 +13,7 @@ const UserSchema = new Mongoose.Schema({
     address : {type : String, required: true},
     email :{type : String, required: true},
     phone :{type : String, required: true},
+    rating: { type: Number, default: 0 },
 })
 
 UserSchema.pre('save', function (next){
@@ -36,10 +37,15 @@ UserSchema.methods.usernameExists = async function (username){
     return result.length > 0
 }
 
-UserSchema.methods.comparePassword = async function (password, hash){
-    const same = await bcrypt.compare(password, hash);
-    return same
+UserSchema.methods.emailExists = async function (email){
+    const result = await Mongoose.model('User').find({email})
+    return result.length > 0
 }
+
+UserSchema.methods.comparePassword = async function (password) {
+    return await bcrypt.compare(password, this.password);
+};
+  
 
 UserSchema.methods.createAccessToken = function (){
     return generateAccessToken(getUserInfo(this));

@@ -3,6 +3,7 @@ import { useState } from "react"
 import { useAuth } from "../auth/Authprovider"
 import { Navigate, useNavigate } from "react-router-dom";
 import { API_URL } from "../auth/constants";
+import { Link } from "react-router-dom";
 
 
 export default function Login(){
@@ -30,7 +31,13 @@ export default function Login(){
             if (response.ok){
                 console.log("Inicio de sesion exitoso");
                 setErrorResponse("");
-                goTo("/")
+                const json = await response.json();
+                if (json.body.accessToken && json.body.refreshToken){
+                    auth.saveUser(json)
+                }
+
+                goTo("/Dashboard") //cuando se inicia sesion lo enviamos a la pagina principal logueado
+
             }else{
                 console.log("Ocurrio un error inesperado");
                 const json = await response.json();
@@ -44,7 +51,7 @@ export default function Login(){
     }
 
     if (auth.isAuthenticated){
-        return <Navigate to="/dashboard" />
+        return <Navigate to="/" />
     }
 
     return (
@@ -60,6 +67,12 @@ export default function Login(){
         <input type="password" value={password} onChange={(e) =>setPassword(e.target.value)}/>
 
         <button>Login</button>
+
+        <ul>
+        <li>
+            <Link to="/ForgottenPassword">Recuperar Contraseña</Link>
+        </li>
+        </ul>
 
     </form>
     </DefaultLayout>

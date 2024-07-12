@@ -30,13 +30,19 @@ export default function ForgottenPassword() {
 
   return (
     <DefaultLayout>
+      <div className="form-container">
+      <h2>Cambiar Contraseña</h2>
       <form className="form" onSubmit={handleSubmit}>
-        <h1>Recuperar Contraseña</h1>
         {!!message && <div className="message">{message}</div>}
+        <div className="form-group">
         <label>Correo Electrónico</label>
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <button>Enviar</button>
+        </div>
+        <div className="submit-button-div">
+        <button className="submit-button">Enviar</button>
+        </div>
       </form>
+      </div>
     </DefaultLayout>
   );
 }

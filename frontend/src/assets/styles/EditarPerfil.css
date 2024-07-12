@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+.profile-edit-container {
+    font-family: 'Inter', sans-serif;
+    background-color: #F7F0BA;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    font-style: Bold;
+    box-shadow: 0px 0px 9px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 85%;
+    padding: 8px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.input-group [type="password"] {
+    width: 85%;
+    padding: 8px;
+    margin: 0;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.edit-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    left: 230px;
+}
+
+.submit-button-edit {
+    padding: 12px;
+    background-color: #b4d7a8;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submit-button-div-edit{
+    text-align: center;
+}
+
+/* Estilos para los campos de entrada cuando están en modo de edición */
+.input-group input:not([readonly]) {
+    background-color: #fff;
+    border: 1px solid #007bff;
+}
+
+/* Ocultar el botón de edición para el campo de contraseña */
+.input-group:nth-child(4) .edit-button {
+    display: none;
+}
+
+.forgot-password-link {
+    font-size: 14px;
+    margin-top: 15px;
+    display: block;
+    color: black; /* Color del enlace */
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    backdrop-filter: blur(5px); /* Aplica el filtro de blur */
+    z-index: 999; /* Z-index inferior al del modal */
+  }

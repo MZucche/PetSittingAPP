@@ -1,0 +1,238 @@
+/* EditPet.css */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.tabs-container {
+  display: flex;
+}
+
+.tabs {
+  display: flex;
+  cursor: pointer;
+}
+
+.tab {
+  padding: 15px 25px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background-color: #BBBBBB;
+  color: black;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: background-color 0.3s ease;
+  width: 258px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+}
+
+.tab:hover {
+  background-color: #d0d0d0;
+}
+
+.tab.active {
+  background-color: #EEEEEE;
+}
+
+.container {
+  display: flex;
+    background-color: #EEEEEE;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    justify-content: space-between;
+    max-width: 71%;
+    margin-bottom: 80px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.perfil {
+  max-width: 250px;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.perfil-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+}
+
+.perfil-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil-item {
+  margin-bottom: 15px;
+}
+
+.perfil-item label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 22px;
+}
+
+.perfil-item input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.edit-btn {
+  background-color: #A9CBA6;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  align-self: flex-start;
+  margin-left: 55px;
+  font-size: 19px;
+  padding: 4px;
+  font-style: italic;
+}
+
+.edit-btn-pet {
+  background-color: #A9CBA6;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+  margin-top: 44px;
+  align-self: flex-start;
+  margin-left: 55px;
+  font-size: 19px;
+  padding: 4px;
+  font-style: italic;
+}
+
+.edit-btn-pet:hover {
+  background-color: #76c776;
+}
+
+.edit-btn:hover {
+  background-color: #76c776;
+}
+
+.separator {
+  width: 2px;
+  background-color: black;
+  margin: 0 20px;
+  margin-top: -21px;
+  margin-bottom: -21px;
+}
+
+.mascotas {
+  flex: 2;
+}
+
+.mascotas h2 {
+  margin-top: 0;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+}
+
+.mascota {
+    height: 113px;
+    display: flex;
+    align-items: center;
+    background-color: #7EBEA3;
+    padding: 15px;
+    margin: 38px 0;
+    border-radius: 10px;
+    max-width: 34%;
+    box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mascota-avatar {
+  width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #ccc;
+    margin-bottom: -42px;
+}
+
+.mascota h3 {
+  margin: revert-layer;
+  font-weight: bold;
+  font-size: 23px;
+  font-style: italic;
+  margin-top: 4px;
+  margin-left: -76px;
+}
+
+.mascota p {
+  margin: 5px 0;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 24px;
+  margin-bottom: 23px;
+}
+
+/* Estilo para la información de las mascotas */
+.info-item {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.value {
+  padding: 2px 5px;
+  font-size: 20px;
+  margin-left: 28px;
+}
+
+.profile-edit-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 1000; /* Asegúrate de que el z-index sea superior a otros elementos */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  width: 400px;
+}
+
+.contrataciones-tab {
+  display: block; /* Cambia el estilo según la pestaña activa */
+}
+
+
+.popup {
+  position: fixed;
+  top: 10%;
+  z-index: 1000; /* Asegúrate de que el z-index sea mayor que el de modal-backdrop */
+}

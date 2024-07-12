@@ -1,9 +1,8 @@
-import '../styles/filtros2.css'
-import  CrearPost from '../componentes/CrearPost'
+import '../styles/filtros.css'
+import  Profile from '../componentes/Profile'
 import  DefaultLayout  from "../layout/DefaultLayout"
 import { useAuth } from "../auth/Authprovider"  //"../assets/auth/AuthProvider";
 import PortalLayout from '../layout/PortalLayout'
-import Prueba from "../componentes/prueba"
 
 export default function Perfil() {
 
@@ -13,15 +12,15 @@ export default function Perfil() {
       return(
         <DefaultLayout>
           <div>
-              <CrearPost/>
+            <p>Inicia sesion para acceder a tu perfil</p>
           </div>
         </DefaultLayout>
     
         );
     }else return (     
       <PortalLayout>
-        <div>
-          <CrearPost/>
+        <div className='centered-container'>
+          <Profile/>
         </div>
       </PortalLayout>
     );

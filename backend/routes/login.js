@@ -6,15 +6,15 @@ const express = require("express");
 
 
 router.post("/", async (req,res) => {
-    const {username, password} = req.body;
+    const {email, password} = req.body;
     
-    if (!!!username ||!!!password) {
+    if (!!!email ||!!!password) {
         return res.status(400).json(jsonResponse(400,{
             error: "Campos Requeridos",
         }))
     }
 
-    const user = await User.findOne({username})
+    const user = await User.findOne({email})
 
     if (user){
         const correctPassword = await user.comparePassword(password, user.password);

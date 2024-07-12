@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+.form-container {
+    font-family: 'Inter', sans-serif;
+    background-color: #F7F0BA;
+    padding: 20px;
+    border-radius: 10px;
+    width: 445px;
+    margin: auto;
+    box-shadow: 0px 0px 9px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    font-style: italic;
+}
+
+.form-group input[type="text"],[type="date"],[type="email"],[type="tel"],[type="password"]{
+    width: 96%; /* Ajuste para incluir espacio del botón */
+    padding: 8px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.form-group select{
+    width: 96%; /* Ajuste para incluir espacio del botón */
+    padding: 8px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-left: 7px;
+}
+
+.toggle-password-button {
+    position: absolute;
+    top: 73%;
+    right: 1px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: black;
+    min-width: 65px;
+}
+
+.svg-icon {
+    fill: #ccc;
+    transition: fill 0.3s;
+}
+
+.toggle-password-button:hover .svg-icon {
+    fill: #333;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.submit-button {
+    width: 40%;
+    padding: 12px;
+    background-color: #b4d7a8;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submit-button-div{
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #a1c97b;
+}
+
+.login-footer {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #000;
+    font-style: italic;
+    padding-bottom: 80px;
+}
+
+.login-footer p {
+    margin: 0.5rem 0;
+    color: #000;
+}
+
+.login-footer a {
+    color: #20b2aa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-footer a:hover {
+    color: #2e8b57;
+}

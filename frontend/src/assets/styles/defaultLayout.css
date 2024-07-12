@@ -1,22 +1,84 @@
-.nav {
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/* src/defaultLayout.css */
+.navbar-default {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #53A08E;
+    padding: 8px;
+    font-family: 'Oswald', sans-serif;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding: 10px;
-    color: white;
+    font-style: normal;
 }
 
-.imgUnk{
-    border-radius: 50%;
-    height: 65px;
-    width: 65px;
+a {
+  color: #fff;
 }
 
-.span-layout{
+.navbar-brand {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-right: 2rem; /* Ajuste este margen según sea necesario */
+}
+
+.navbar-links,
+.navbar-auth {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-links {
+  margin-right: auto; /* Empuja los enlaces a la izquierda */
+}
+
+.navbar-links a,
+.navbar-auth a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-links a:hover,
+.navbar-auth a:hover {
+  text-decoration: underline;
+}
+
+.auth-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.navbar-auth li {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Asegúrate de que los elementos de la lista ocupen toda la altura del navbar */
+}
+
+.navbar-auth li a {
+  display: flex;
+  align-items: center;
+}
+
+
+.backgroundHome{
+    background-image: url("../images/backgroundHomeImage.png");
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
     display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh;
 }
 
-.p-lay{
-    padding: 0%;
-}

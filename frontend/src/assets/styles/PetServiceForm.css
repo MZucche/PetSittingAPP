@@ -1,0 +1,102 @@
+.pet-service-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #F7F0BA;
+}
+
+.pet-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.pet-icon {
+    width: 50px;
+    height: 50px;
+    background: lightgrey;
+    border-radius: 50%;
+}
+
+.service-selection,
+.frequency-selection,
+.days-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.service-button,
+.frequency-button,
+.day-button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+}
+
+.service-button.selected,
+.frequency-button.selected,
+.day-button.selected {
+    background: #4CAF50;
+    color: white;
+}
+
+.start-date,
+.zone-selection,
+.rating-selection,
+.price-range {
+    margin-bottom: 10px;
+}
+
+.start-date label,
+.zone-selection label,
+.rating-selection label,
+.price-range label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rating-stars {
+    display: flex;
+}
+
+.rating-stars .star {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rating-stars .star.selected {
+    color: gold;
+}
+
+.price-range input[type="range"] {
+    width: 100%;
+}
+
+.price-range span {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.search-button {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

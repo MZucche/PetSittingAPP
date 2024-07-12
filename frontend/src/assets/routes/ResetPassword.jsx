@@ -34,13 +34,17 @@ export default function ResetPassword() {
 
   return (
     <DefaultLayout>
+      <div className="form-container">
+      <h2>Cambiar Contraseña</h2>
       <form className="form" onSubmit={handleSubmit}>
-        <h1>Restablecer Contraseña</h1>
         {!!message && <div className="message">{message}</div>}
         <label>Nueva Contraseña</label>
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        <button>Restablecer</button>
+        <div className="submit-button-div">
+        <button className="submit-button">Restablecer</button>
+        </div>
       </form>
+      </div>
     </DefaultLayout>
   );
 }

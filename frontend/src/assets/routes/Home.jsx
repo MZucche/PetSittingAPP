@@ -1,26 +1,45 @@
 import  DefaultLayout  from "../layout/DefaultLayout"
-import { Filtros } from "../componentes/filtros"
-import "../styles/filtros2.css"
+import FilterComponent from "../componentes/FilterComponent"
+import PetServicesComponent from "../componentes/PetServiceComponent"
+import "../styles/filtros.css"
 import { useAuth } from "../auth/Authprovider"  //"../assets/auth/AuthProvider";
 import PortalLayout from "../layout/PortalLayout"
+import { useNavigate } from 'react-router-dom';
+import "../styles/defaultLayout.css"
+import ServiciosContainer from "../componentes/ServiciosContainer"
+
+
 
 export default function Home(){
 
     const { isAuthenticated, user } = useAuth();
 
+    const navigate = useNavigate();
+
+    const handleSearch = (filters) => {
+      // Convertir los filtros a una cadena de consulta
+      const queryParams = new URLSearchParams(filters).toString();
+      // Navegar a la página de búsqueda con los filtros como parámetros de consulta
+      navigate(`/search?${queryParams}`);
+    };
+
     if (!isAuthenticated) {
         return(
             <DefaultLayout>
-    
-                <Filtros/>
-    
+                <div className="backgroundHome">
+                <FilterComponent onSearch={handleSearch}/>
+                </div>
+                <ServiciosContainer/>
             </DefaultLayout>
     
         );
     }else return (     
-      <PortalLayout>
-                <Filtros/>
-    </PortalLayout>
+        <PortalLayout>
+                <div className="backgroundHome">
+                <FilterComponent onSearch={handleSearch}/>
+                </div>
+                <ServiciosContainer/>
+        </PortalLayout>
     );
 
 }

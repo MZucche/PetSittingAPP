@@ -1,0 +1,192 @@
+.whisker-wrapper {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 51%);
+  max-width: 600px;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.whisker-wrapper-service {
+  font-style: italic;
+  background-color: #F7F0BA;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 51%);
+  max-width: 800px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.paw-print-section {
+  margin-bottom: 20px;
+}
+
+.paw-print-section h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.critter-icons img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.critter-icons img.fur-selected {
+  background-color: #53A08E;
+}
+
+.kibble-buttons button,
+.tail-wag-buttons button {
+  background-color: white;
+  border: 1px solid #53A08E;
+  color: #53A08E;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.kibble-buttons button.kibble-selected,
+.tail-wag-buttons button.tail-selected {
+  background-color: #53A08E;
+  color: white;
+}
+
+.whisker-inputs input,
+.territory-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.fetch-button {
+  background-color: #7EBEA3;
+    color: white;
+    border: none;
+    padding: 9px 27px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+    margin-bottom: -36px;
+    margin-top: -17px;
+}
+
+.fetch-button:hover {
+  background-color: #53A08E;
+}
+
+.fur-selected {
+  /* Estilos que indican que el elemento está seleccionado */
+  background-color: #ffcc00; /* Ejemplo de color de fondo */
+  border: 2px solid #e68a00; /* Ejemplo de borde */
+  /* Otros estilos según el diseño de tu aplicación */
+}
+
+.day-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.day-button {
+  padding: 8px 12px;
+  border: 1px solid #53A08E;
+  border-radius: 10px;
+  background-color: white;
+  color: #53A08E;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.day-button.selected {
+  background-color: #53A08E;
+  color: white;
+}
+
+.day-button:hover {
+  background-color: #e6f3f0;
+}
+
+.whisker-inputs {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #53A08E;
+  border-radius: 10px;
+  background-color: white;
+  color: #53A08E;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.custom-select:hover {
+  background-color: #e6f3f0;
+}
+
+.custom-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(83, 160, 142, 0.2);
+}
+
+.custom-select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #53A08E;
+  pointer-events: none;
+}
+
+/* Estilo para cuando el select está abierto */
+.custom-select:focus + .custom-select-arrow {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Estilo para las opciones del select */
+.custom-select option {
+  background-color: white;
+  color: #333;
+}
+
+.rating .star-icon {
+  width: 24px;
+  height: 24px;
+  fill: grey;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.rating .star-icon.selected {
+  fill: yellow;
+}

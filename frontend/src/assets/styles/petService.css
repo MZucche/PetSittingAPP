@@ -1,0 +1,372 @@
+.form-container-petService {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #F7F0BA;
+}
+
+.filtros-div {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.filtros-h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.pet-icons, .service-icons, .frequency-buttons, .availability-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.selected-pet, .not-selected-pet, .selected-service, .not-selected-service, .selected-frequency, .not-selected-frequency, .selected-day, .not-selected-day {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected-pet, .selected-service, .selected-frequency, .selected-day {
+  background-color: #8bc34a;
+  padding: 5px;
+}
+
+.not-selected-pet, .not-selected-service, .not-selected-frequency, .not-selected-day {
+  background-color: #e0e0e0;
+  padding: 5px;
+
+}
+
+.price-range {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.price-display {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+
+.input-text, .textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.textarea {
+  height: 100px;
+  resize: none;
+}
+
+.div-filtros{
+  display: flex;
+  justify-content:space-evenly;
+}
+
+
+.pet{
+    width: 75px;
+    height: 75px;
+}
+.section-busq{
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
+.section-filtros {
+    width: 400px;
+    height: 90%;
+    position: fixed;
+    margin-left: 5px;
+    background-color: #EEEEEE;
+    border-radius: 5%;
+}
+
+.filter-label{
+    margin: 15px;
+}
+
+.service-provider{
+  display: flex;
+  background-color: #7EBEA3;
+  border-radius: 10px;
+  height: fit-content;
+  width: 100%;
+  align-items: center;
+  margin: 10px;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.span-service-provider{
+  display: block;
+    padding-left: 20px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.div-service-provider{
+    display: flex;
+    align-items: center;
+}
+
+.main-filtros-busqueda{
+    padding: 20px;
+}
+
+.rating{
+    display: flex;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+  .rating-no {
+    position: relative;
+    display: inline-block;
+    color: grey;
+    width: 0px;
+    height: 0px;
+    border-right: 12.5px solid transparent;
+    border-bottom: 8.75px solid grey;
+    border-left: 12.5px solid transparent;
+    transform: rotate(35deg);
+  }
+
+  .rating-no::before {
+    border-bottom: 10px solid grey;
+    border-left: 3.75px solid transparent;
+    border-right: 3.75px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -6.25px;
+    left: -8px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+
+  .rating-no::after {
+    position: absolute;
+    display: block;
+    color: grey;
+    top: 0.75px;
+    left: -13.75px;
+    width: 0px;
+    height: 0px;
+    border-right: 12.5px solid transparent;
+    border-bottom: 8.75px solid grey;
+    border-left: 12.5px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+  .rating-yes {
+    position: relative;
+    display: inline-block;
+    color: gold;
+    width: 0px;
+    height: 0px;
+    border-right: 12.5px solid transparent;
+    border-bottom: 8.75px solid gold;
+    border-left: 12.5px solid transparent;
+    transform: rotate(35deg);
+  }
+
+  .rating-yes::before {
+    border-bottom: 10px solid gold;
+    border-left: 3.75px solid transparent;
+    border-right: 3.75px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -6.25px;
+    left: -8px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+
+  .rating-yes::after {
+    position: absolute;
+    display: block;
+    color: gold;
+    top: 0.75px;
+    left: -13.75px;
+    width: 0px;
+    height: 0px;
+    border-right: 12.5px solid transparent;
+    border-bottom: 8.75px solid gold;
+    border-left: 12.5px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+
+.service-provider-plpl{
+  display: flex;
+  background-color: #A9CBA6;
+  border-radius: 10px;
+  height: fit-content;
+  align-items: center;
+  margin: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+  
+.postststst{
+  display: flex;
+  margin: 10px;
+}
+
+.pet{
+    width: 75px;
+    height: 75px;
+}
+.div-buttons-nxnx{
+  display: grid;
+  margin: 15px;
+}
+
+.servicios{
+  width: 100%;
+}
+
+.div-buttons-nxnx {
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.icon-button {
+  background-color: #e0e0e0;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pause-button {
+  background-color: #A9CBA6; /* Verde claro */
+}
+
+.activate-button {
+  background-color: #A9CBA6; /* Verde claro */
+}
+
+.delete-button {
+  background-color: #A9CBA6; /* Rojo claro */
+}
+
+.icon-button:hover {
+  opacity: 0.8;
+}
+
+.icon-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.booking-card {
+  background-color: #A9CBA6;
+    border-radius: 10px;
+    padding: 17px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 10px;
+    height: 125px;
+}
+
+.booking-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-details {
+  flex-grow: 1;
+}
+
+.user-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.booking-status {
+  margin: 5px 0 0;
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.action-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.booking-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.booking-options button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.booking-options button:nth-child(1) {
+  background-color: #4caf50;
+  color: white;
+}
+
+.booking-options button:nth-child(2) {
+  background-color: #f44336;
+  color: white;
+}
+
+.booking-options button:nth-child(3) {
+  background-color: #2196f3;
+  color: white;
+}

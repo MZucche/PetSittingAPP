@@ -1,65 +1,105 @@
-.filtros-article{
-    background-color: aliceblue;
-    width: 1000px;
-    justify-content:space-evenly;
-    bottom: 500000px;
-
+.form-containeru {
+    background-color: #fafad2;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.filtros-div{
-    padding: 1%;
+.filtros-divu {
+    margin-bottom: 20px;
+}
+
+.filtros-h1u {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.pet-iconsu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.pet-iconsu img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pet-iconsu img.selected-petu {
+    background-color: #add8e6;
+}
+
+.service-iconsu, .availability-buttonsu {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.service-iconsu span, .availability-buttonsu span {
+    padding: 8px 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service-iconsu span.selected-serviceu, 
+.availability-buttonsu span.selected-frequencyu,
+.availability-buttonsu span.selected-dayu {
+    background-color: #add8e6;
+}
+
+.textareau {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.select-experienciau {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-containeru {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
-.filtros-div-buscar{
-    padding: 1%;
-    display: flex;
-    justify-content: end;
+.cancel-buttonu {
+    background-color: #d3d3d3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.button-notSelected-animals {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: grey;
-    border-radius: 50%;
+.submit-buttonu {
+    background-color: #90ee90;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.button-selected-animals{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: lightgreen;
-    border-radius: 50%;
-}
-
-.button-notSelected-services{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: grey;
-}
-
-.button-selected-services{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: lightgreen;
-}
-
-.button-notSelected-frequencies{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: grey;
-}
-
-.button-selected-frequencies{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: lightgreen;
-}
-
-.button-selected-dias{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: lightgreen;
-}
-
-.button-notSelected-dias{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: grey;
-}
-
-.filtros-h1 {
-    color: black;
+.div-search{
+        text-align: center;
+        background-color: #7EBEA3;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        align-content: center;
+        margin-right: 400px;
+        margin-left: 400px;
+        border-radius: 20px;
 }

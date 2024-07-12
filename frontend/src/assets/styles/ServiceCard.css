@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+.service-card {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #EEEEEE;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter';
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #EEEEEE;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #f0f0f0;
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+  font-style: italic;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  color: black;
+  font-style: italic;
+}
+
+.service-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.service-text {
+  font-size: 2em;
+  color: #53A08E;
+  font-family: 'Oswald';
+}
+
+.description {
+  margin-bottom: 20px;
+  background-color: #F7F0BA;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
+  width: 598px;
+}
+
+.availability-section {
+  margin-bottom: 20px;
+  background-color: #F5F5C4;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
+  width: 598px;
+}
+
+.frequency,
+.availability {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.frequency p,
+.availability p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.frequency span,
+.availability span {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 10px 11px;
+  border-radius: 9px;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid #53A08E;
+}
+
+.frequency span.active,
+.availability span.active {
+  background-color: #7EBEA3;
+  color: white;
+}
+
+.price-contact {
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos hacia la derecha */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-right: -131px;
+  margin-top: -170px;
+}
+
+.price-contact button {
+  padding: 16px 51px;
+  background-color: #7EBEA3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -88px;
+  font-style: italic;
+}
+
+.price-contact button:hover {
+  background-color: #53A08E;
+}
+.contact-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #F7F0BA;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact-form select,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  width: 394px;
+  font-size: 18px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #53A08E;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  width: 204px;
+}
+
+.contact-form button[type="submit"] {
+  margin-right: 10px;
+}
+
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+
+.icon {
+  width: 22px;
+  height: 22px;
+}

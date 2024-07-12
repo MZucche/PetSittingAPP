@@ -2,10 +2,13 @@ function getUserInfo (user){
     return{
         username: user.username,
         name: user.name,
-        phone: user.phone,
-        email: user.email,
-        id: user.id,
+        surname: user.surname,
         address: user.address,
+        zone: user.zone,
+        id: user.id,
+        email: user.email,
+        phone: user.phone,
+        rating: user.rating,
     }
 }
 

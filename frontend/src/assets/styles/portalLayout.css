@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/* src/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #53A08E;
+    font-family: 'Oswald', sans-serif;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+a {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-right: 2rem;
+    margin-left: 20px; /* Ajuste este margen según sea necesario */
+}
+
+.navbar-links,
+.navbar-auth {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-links {
+    margin-right: auto; /* Empuja los enlaces a la izquierda */
+}
+
+.navbar-links a,
+.navbar-auth a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-links a:hover,
+.navbar-auth a:hover {
+    text-decoration: underline;
+}
+
+.centered-container {
+    margin-left: 25%;
+    margin-top: 80px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.avatar-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding-right: 5px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 4px;
+    z-index: 1000;
+    width: 180px;
+}
+
+.dropdown-menu li {
+    padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}

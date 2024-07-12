@@ -4,9 +4,9 @@ const User = require ("../schema/user")
 const express = require("express");
 
 router.post("/", async (req,res) => {
-    const {name, surname, username, email, phone, address, password} = req.body;
+    const {name, surname, username, email, phone, address, password, zone} = req.body;
     
-    if (!!!name || !!!surname || !!!username || !!!email || !!!phone || !!!address || !!!password) {
+    if (!!!name || !!!surname || !!!username || !!!email || !!!phone || !!!address || !!!password || !!!zone) {
         return res.status(400).json(jsonResponse(400,{
             error: "Campos Requeridos",
         }))
@@ -29,7 +29,7 @@ router.post("/", async (req,res) => {
         }))
         } 
         else{
-        const newUser = new User({name, surname, username, email, phone, address, password});
+        const newUser = new User({name, surname, username, email, phone, address, zone, password});
 
         await newUser.save();
 
